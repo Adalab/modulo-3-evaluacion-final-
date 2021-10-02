@@ -1,6 +1,6 @@
 import FilterCharName from "./FilterCharName";
 import FilterCharSpecie from "./FilterCharSpecie";
-
+import '../styles/layout/Form.scss';
 
 const Filters = (props) => {
     return (

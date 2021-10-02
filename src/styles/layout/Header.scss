@@ -1,13 +1,24 @@
-.imageLogo {
-  width: 300px;
-}
-header {
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  text-align: center;
-  margin-left: 30px;
+  margin-right: 10px;
+  &__imageLogo {
+    width: 300px;
+    @media (min-width: 768px) {
+      width: 500px;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 50px;
+    }
+  }
 }

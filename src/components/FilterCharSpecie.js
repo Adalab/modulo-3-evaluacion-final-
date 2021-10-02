@@ -1,7 +1,7 @@
 const FilterCharSpecie = (props) => {
     return (
         <>
-            <label htmlFor="species">Select species here</label>
+            <label htmlFor="species" className='form__labelText'>Select species here</label>
             <select className='form__searchSpecies'
                 name="species"
                 id="species"

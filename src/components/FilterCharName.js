@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const FilterCharName = (props) => {
     return (
         <>
-            <label htmlFor={props.id}>{props.labelText}</label>
+            <label htmlFor={props.id} className='form__labelText'>{props.labelText}</label>
             <input className='form__searchName'
                 type={props.type}
                 name={props.name}
