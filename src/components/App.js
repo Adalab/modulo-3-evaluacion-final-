@@ -12,7 +12,8 @@ import Header from "./Header";
 import Filters from "./Filters";
 import RenderCharList from "./RenderCharList";
 import CharCard from "./CharCard";
-
+import PageNotFound from "./PageNotFound";
+import Footer from "./Footer";
 
 function App() {
   const [data, setData] = useState([]);
@@ -43,6 +44,7 @@ function App() {
   //filter
 
   const FilteredData = data
+
     .filter((char) => {
       const charName = char.name
         .toLocaleLowerCase()
@@ -66,28 +68,35 @@ function App() {
   const selectedChar = data.find((char) => {
     return char.id === parseInt(charId);
   });
+
   return (
     <>
       <Header />
 
       <Switch>
         <Route path="/" exact>
-          <Filters
-            searchName={searchName}
-            selectSepecies={selectSepecies}
-            handleSearchName={handleSearchName}
-            handleSelect={handleSelect}
-          />
-          <RenderCharList data={FilteredData} />
-        </Route>
+          <main className='main'>
+            <Filters
+              searchName={searchName}
+              selectSepecies={selectSepecies}
+              handleSearchName={handleSearchName}
+              handleSelect={handleSelect}
+            />
+            <RenderCharList data={FilteredData} />
+          </main>
 
+        </Route>
 
         <Route path="/character/:characterId">
           <CharCard char={selectedChar} />
-
         </Route>
 
+        <Route>
+          <PageNotFound />
+        </Route>
       </Switch>
+      <Footer />
+
     </>
   );
 }

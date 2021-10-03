@@ -1,0 +1,53 @@
+.wrapperCharCard {
+  display: grid;
+  justify-items: end;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  margin-top: 50px;
+
+  &__link {
+    border: solid 2px black;
+    margin-bottom: 30px;
+    text-align: center;
+    height: 40px;
+    background-color: #53abee;
+    width: 110px;
+
+    &--text {
+      text-decoration: none;
+      font-size: 30px;
+      color: white;
+    }
+  }
+
+  &__description {
+    display: flex;
+    border: solid 2px white;
+    background-color: #eac9ea;
+    color: #f07e96;
+    padding: 10px;
+    &--img {
+      width: 250px;
+      height: 250px;
+      @media (min-width: 768px) {
+        width: 350px;
+        height: 350px;
+      }
+    }
+
+    &--listChar {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-left: 10px;
+
+      @media (min-width: 768px) {
+        font-size: 30px;
+      }
+    }
+  }
+}

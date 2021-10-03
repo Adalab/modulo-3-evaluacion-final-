@@ -1,6 +1,5 @@
 .mainWrapper {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 40px 40px;
 
   &__link {
     text-decoration: none;
@@ -11,23 +10,23 @@
   padding-left: 0px;
   list-style: none;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   grid-template-rows: auto;
-  gap: 10px;
+  gap: 5px;
   justify-items: center;
   justify-content: center;
-  @media (max-width: 400px) {
+
+  @media (max-width: 540px) {
     grid-template-columns: auto;
   }
   @media (min-width: 768px) {
     grid-template-columns: auto auto auto;
+    gap: 110px;
   }
   @media (min-width: 1200px) {
-    grid-template-columns: auto auto auto auto auto;
-    gap: 20px;
+    grid-template-columns: auto auto auto auto;
   }
   &__listChar {
-    border: black 2px solid;
     max-width: 250px;
 
     &--wrap {
@@ -35,19 +34,38 @@
       flex-direction: column;
       align-items: center;
       padding: 10px 10px;
+
+      @media (min-width: 768px) {
+        width: 300px;
+        height: 300px;
+      }
     }
     &--imageChar {
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
+
+      @media (min-width: 768px) {
+        width: 300px;
+        height: 300px;
+      }
     }
     &--styleContent {
-      margin-left: 10px;
-      font-size: 15px;
+      font-family: "Gemunu Libre", sans-serif;
+      font-size: 20px;
+      color: white;
+      background-color: #69c8ecff;
+      width: 100%;
+      padding: 10px 10px;
+
+      @media (min-width: 768px) {
+        width: 300px;
+      }
     }
 
     &--textName {
-      max-width: 112px;
+      max-width: 130px;
       padding: 5px 0;
+      font-size: 20px;
     }
   }
 }

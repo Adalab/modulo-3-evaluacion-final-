@@ -6,19 +6,21 @@
   align-content: center;
   justify-content: center;
   margin-right: 10px;
+  margin-bottom: 60px;
+
   &__imageLogo {
     width: 300px;
     @media (min-width: 768px) {
-      width: 500px;
+      width: 600px;
     }
   }
 
   &__title {
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
 
     @media (min-width: 768px) {
-      font-size: 50px;
+      font-size: 60px;
     }
   }
 }

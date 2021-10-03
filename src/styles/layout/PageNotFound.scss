@@ -1,0 +1,16 @@
+.wrapperNotFound {
+  margin: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  &__errorText {
+    font-size: 60px;
+    color: #c1f762;
+  }
+  &__returnText {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+  }
+}
