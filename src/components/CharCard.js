@@ -8,21 +8,18 @@ const CharCard = (props) => {
         if (status === "Alive") {
             return (
                 <p>
-
                     Status: <i class="fab fa-reddit-alien"></i>
                 </p>
             );
         } else if (status === "Dead") {
             return (
                 <p>
-
                     Status: <i class="fas fa-skull-crossbones"></i>
                 </p>
             );
         } else {
             return (
                 <p>
-
                     Status: <i class="far fa-question-circle"></i>
                 </p>
             );

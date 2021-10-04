@@ -20,11 +20,18 @@ function App() {
   const [searchName, setSearchName] = useState(ls.get("name", ""));
   const [selectSepecies, setSelectSpecies] = useState("All");
 
-  //FETCH FORM API
+
   useEffect(() => {
-    api.callToApi().then((response) => {
-      setData(response);
-    });
+    if (ls.get('char', []).length > 0) {
+      console.log(ls.get('char', []));
+      setData(ls.get('char', []));
+    } else {
+      api.callToApi().then((initialData) => {
+        console.log(initialData);
+        setData(initialData);
+        ls.set('char', initialData);
+      });
+    }
   }, []);
 
   //GUARDAR NAME EN LOCAL STORAGE
@@ -50,7 +57,7 @@ function App() {
         .toLocaleLowerCase()
         .includes(searchName.toLocaleLowerCase());
       if (charName === false) {
-        return console.log("error");
+        return console.log('error');
       } else {
         return charName;
       }
@@ -58,12 +65,13 @@ function App() {
 
     .filter(
       (char) => selectSepecies === "All" || selectSepecies === char.species
-    );
+    )
 
 
   //ROUTER
 
   const routeData = useRouteMatch("/character/:characterId");
+  console.log(routeData)
   const charId = routeData != null ? routeData.params.characterId : "";
   const selectedChar = data.find((char) => {
     return char.id === parseInt(charId);
