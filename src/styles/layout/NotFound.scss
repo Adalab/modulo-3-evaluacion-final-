@@ -5,9 +5,21 @@
   align-items: center;
   flex-wrap: wrap;
   &__errorText {
-    font-size: 60px;
+    font-size: 50px;
     color: #c1f762;
     text-align: center;
+  }
+  &__img {
+    width: 600px;
+    height: 600px;
+    @media (max-width: 760px) {
+      width: 500px;
+      height: 500px;
+    }
+    @media (max-width: 500px) {
+      width: 400px;
+      height: 400px;
+    }
   }
   &__returnText {
     font-size: 40px;
