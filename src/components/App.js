@@ -40,12 +40,12 @@ function App() {
   }, [searchName]);
   // FUNCTION INPUTS SEARCH NAME AND SELECT INPUT
 
-  const handleSearchName = (ev) => {
-    setSearchName(ev.currentTarget.value);
+  const handleSearchName = (value) => {
+    setSearchName(value);
   };
 
-  const handleSelect = (ev) => {
-    setSelectSpecies(ev.currentTarget.value);
+  const handleSelect = (value) => {
+    setSelectSpecies(value);
   };
 
   //filter

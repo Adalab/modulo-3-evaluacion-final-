@@ -1,4 +1,7 @@
 const FilterCharSpecie = (props) => {
+    const changeHandleSelect = (ev) => {
+        props.handleSelect(ev.currentTarget.value)
+    }
     return (
         <>
             <label htmlFor="species" className='form__labelText'>Select species here</label>
@@ -6,7 +9,7 @@ const FilterCharSpecie = (props) => {
                 name="species"
                 id="species"
                 value={props.selectSepecies}
-                onChange={props.handleSelect}
+                onChange={changeHandleSelect}
             >
                 <option value="All">All</option>
                 <option value="Human">Human</option>

@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
 
 const FilterCharName = (props) => {
+    const handleChangeName = (ev) => {
+        props.handleSearchName(ev.currentTarget.value)
+    }
     return (
         <>
             <label htmlFor={props.id} className='form__labelText'>{props.labelText}</label>
@@ -9,7 +12,7 @@ const FilterCharName = (props) => {
                 name={props.name}
                 id={props.id}
                 value={props.searchName}
-                onChange={props.handleSearchName}
+                onChange={handleChangeName}
             />
         </>
     );
