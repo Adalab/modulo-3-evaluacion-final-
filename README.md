@@ -11,11 +11,15 @@ of characters corresponding to the first page of the API will appear (Please fin
 
 ## Features
 
-1. You use the Api to fetch and show in The application a list of characters (sorted by name).
+1. I use the Rick and Morty Api to fetch and show in the app a list of characters (sorted by name).
+
 2. The user can look for any character by name using the input search or select a specie option from the select input in order to get a complete list of that specif specie.
+
 3. When the user click on any of the characters' card, it takes us to a new page where the user can find more information about that specific character and a button to return to the main page.
-4. when the user refresh the page, he/she/they will receive the same info he/she/they where previously checking (if it is a character card for example, or a list of specific selected specie).
-5. If the user is browsing an incorrect link or cannot find a character, they will be an automatic error message with an option to go back to the main page.
+
+4. when the user refresh the page, he/she/they will receive the same info, he/she/they were previously checking (if it is a character card for example, or a list of specific selected specie).
+
+5. If the user is browsing an incorrect link or cannot find a character, there will be an automatic error message with an option to go back to the main page.
 
 # How to check this repo:
 
@@ -33,4 +37,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-# Thank you for checking out my project, please feel free to reach out in case you have questions or feedback!
+## Thank you for checking out my project, please feel free to reach out in case you have questions or feedback!
