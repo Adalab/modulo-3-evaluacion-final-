@@ -77,6 +77,7 @@ function App() {
       return 0;
     });
 
+
   //ROUTER
 
   const routeData = useRouteMatch("/character/:characterId");
@@ -85,6 +86,7 @@ function App() {
   const selectedChar = data.find((char) => {
     return char.id === parseInt(charId);
   });
+
 
   return (
     <>
