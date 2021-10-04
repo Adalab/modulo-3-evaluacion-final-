@@ -66,7 +66,6 @@ function App() {
     .filter(
       (char) => selectSepecies === "All" || selectSepecies === char.species
     )
-
     .sort((a, b) => {
       if (a.name > b.name) {
         return 1;
@@ -79,14 +78,12 @@ function App() {
 
 
   //ROUTER
-
   const routeData = useRouteMatch("/character/:characterId");
   console.log(routeData)
   const charId = routeData != null ? routeData.params.characterId : "";
   const selectedChar = data.find((char) => {
     return char.id === parseInt(charId);
   });
-
 
   return (
     <>
@@ -103,7 +100,6 @@ function App() {
             />
             <RenderCharList data={FilteredData} />
           </main>
-
         </Route>
 
         <Route path="/character/:characterId">

@@ -10,7 +10,7 @@ const RenderCharList = (props) => {
         //si el char esta en lal ista lo pinta 
     } else {
         const listHtml = props.data
-            .map((char, index) => (
+            .map((char) => (
                 <li key={char.id} className="wrapper__listChar">
                     <Link to={`/character/${char.id}`} className='mainWrapper__link'>
                         <RenderCharDetails char={char} />

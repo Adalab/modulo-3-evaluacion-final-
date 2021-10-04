@@ -8,10 +8,7 @@
   margin-bottom: 60px;
 
   &__imageLogo {
-    width: 300px;
-    @media (min-width: 768px) {
-      width: 600px;
-    }
+    width: 400px;
   }
 
   &__title {
@@ -19,7 +16,7 @@
     text-align: center;
 
     @media (min-width: 768px) {
-      font-size: 60px;
+      font-size: 50px;
     }
   }
 }
