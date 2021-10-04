@@ -2,7 +2,7 @@
 
 <h3 >A passionate front-end developer student from Barcelona! Welcome to my Git.✨</h3>
 
-Please find here my first completed App built with REACT.
+Please find here my first completed App built with REACT: http://beta.adalab.es/modulo-3-evaluacion-final-Sararid/ !
 
 # Rick and Morty search engine
 
