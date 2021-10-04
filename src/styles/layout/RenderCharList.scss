@@ -28,6 +28,9 @@
   }
   &__listChar {
     max-width: 250px;
+    :hover {
+      background-color: yellowgreen;
+    }
 
     &--wrap {
       display: flex;

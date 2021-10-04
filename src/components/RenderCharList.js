@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import RenderCharDetails from "./RenderCharDetails";
-import '../styles/layout/CharList.scss';
+import '../styles/layout/RenderCharList.scss';
 import CharNotFound from "./CharNotFound";
 
 const RenderCharList = (props) => {
