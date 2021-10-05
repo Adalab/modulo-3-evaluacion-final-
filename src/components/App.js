@@ -23,11 +23,9 @@ function App() {
 
   useEffect(() => {
     if (ls.get('char', []).length > 0) {
-      console.log(ls.get('char', []));
       setData(ls.get('char', []));
     } else {
       api.callToApi().then((initialData) => {
-        console.log(initialData);
         setData(initialData);
         ls.set('char', initialData);
       });
