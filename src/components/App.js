@@ -100,6 +100,7 @@ function App() {
             />
             <RenderCharList data={FilteredData} />
           </main>
+          <Footer />
         </Route>
 
         <Route path="/character/:characterId">
@@ -110,7 +111,7 @@ function App() {
           <PageNotFound />
         </Route>
       </Switch>
-      <Footer />
+
 
     </>
   );
